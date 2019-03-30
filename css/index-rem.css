@@ -1,0 +1,295 @@
+/* 引入自定义字体 */
+@font-face {
+  font-family: '站酷小薇LOGO体';
+  src: url("../font/站酷小薇LOGO体.otf");
+}    
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+#container{
+  position: absolute;
+}
+/* 背景图片 */
+#bg1{
+  position: absolute;
+  width: 15.36rem;
+  height: 8.648rem;
+  z-index: -10;
+  margin-top: -0.656rem;
+}
+#bg2{
+  position: absolute;
+  width: 15.36rem;
+  height: 8.648rem;
+  z-index: -10;
+  opacity: 0;
+  margin-top: -0.656rem;
+}
+#sky1{
+  position: absolute;
+  width: 15.36rem;
+  height: 8.648rem;
+  z-index: -11;
+  margin-top: -0.656rem;
+}
+#sky2{
+  position: absolute;
+  width: 15.36rem;
+  height: 8.648rem;
+  z-index: -11;
+  opacity: 0;
+  margin-top: -0.656rem;
+}
+/* 太阳或月亮 */
+#sunOrMoon{
+  position: absolute;
+  z-index: -9;
+
+  top: 2.5rem;
+  left: 0;
+}
+/* 标题 */
+#caption{
+  position: absolute;
+  z-index: -8;
+  width: 2.688rem;
+  height: 1.04rem;
+  top: 1.8rem;
+}
+
+/* 人物 */
+#person1,#person2,#person3{
+  position: absolute;
+  z-index: -7;
+}
+
+/* 模态框 */
+#modelContainer{
+  z-index: 99;
+  position: absolute;
+  width: 15.36rem;
+  height: 8.648rem;
+  background: url('../img/登陆/社团小镇\ 登陆素材-01.png');
+  display: none;
+}
+#model{
+  z-index: 100;
+  color: #636363;
+  position: relative;
+  width: 5.2rem;
+  height: 5.568rem;
+  top: 1.536rem;
+  left: 5.08rem;
+  background: url('../img/登陆/社团小镇\ 登陆素材-02.png');
+  background-size: 100% 100%; 
+  border-radius: 0.1rem;
+}
+#model-close{
+  position: absolute;
+  width: 0.256rem;
+  top: 0.192rem;
+  left: 4.792rem;
+}
+.model-header{
+  font-family: '站酷小薇LOGO体';
+  font-size: 0.456rem;
+  color: #bd2720;
+  padding: 0.512rem 0 0 0;
+  text-align: center;
+  margin-bottom: 0.56rem;
+}
+.model-header img{
+  width: 0.208rem;
+}
+.model-login{
+
+}
+/* 设置placeholder */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #636363;
+  font-size: 0.192rem;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #636363;
+  font-size: 0.192rem;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #636363;
+  font-size: 0.192rem;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #636363;
+  font-size: 0.192rem;
+}
+
+.model-login-input{
+  color: #636363;
+  font-size: 0.192rem;
+  display: block;
+  border: none;
+  background: none;
+  border-bottom: 0.01rem solid #636363;
+  height: 0.4rem;
+  outline: none;
+  margin: 0 0 0.336rem 0.4rem;
+  width: 4.016rem;
+  padding: 0 0.16rem;
+}
+.model-login-checkbox{
+  margin: 0.448rem 0 0 0.432rem;
+  height: 0.312rem;
+}
+.model-login-checkbox input{
+
+  float: left;
+  margin-left: 0.048rem;
+}
+.model-login-checkbox-label{
+  display: inline-block;
+  font-size: 0.16rem;
+  float: left;
+  margin: -0.016rem 0 0 0.0464rem; 
+}
+.model-login-btn{
+  width: 4.32rem;
+  height: 0.664rem;
+  border: none;
+  background: url('../img/登陆/社团小镇\ 登陆素材-03.png');
+  background-size: 100% 100%;
+  color:  white;
+  font-size: 0.352rem;
+  font-family: '站酷小薇LOGO体';
+  float: left;
+  margin-left: 0.424rem;
+  margin-top: -0.024rem;
+}
+.model-login-footer{
+  width: 4.336rem;
+  float: left;
+  margin: 0.096rem 0 0 0.432rem;
+  color: #636363;
+  font-size: 0.16rem;
+}
+.model-footer{
+  float: left;
+  margin: 0.48rem 0 0 1.536rem;
+}
+.model-footer span{
+  float: left;
+  font-size: 0.216rem;
+  font-family: '站酷小薇LOGO体';
+}
+.model-footer a{
+  float: left;
+  color:  #0e3477;
+  font-size: 0.216rem;
+  font-family: '站酷小薇LOGO体';
+}
+
+/* 顶部导航栏 */
+#head{
+  /* display: none; */
+}
+#head *{
+  vertical-align:top;
+}
+.headItem{
+  display: inline-block;
+  vertical-align:top;
+}
+.headItemLeft{
+  float: left;
+  margin:  0.28rem 0 0 0.32rem;
+}
+.headItemCenter{
+  float: left;
+}
+.headItemCenter ul li a{
+  color: white;
+  letter-spacing: 0.028rem;
+}
+.headItemRight{
+  float: right;
+}
+.navigation{
+  list-style: none;
+}
+
+.navigationItem{
+  float: left;
+}
+
+.navigationItemCenter{
+  margin: 0.368rem 0 0 0.4rem;
+}
+.navigationItemCenter a{
+  font-family: '站酷小薇LOGO体';
+  font-size: 0.144rem;
+}
+
+.navigationItemRight{
+  margin: 0 0.32rem 0 0;
+}
+
+/* 折叠状态导航栏 */
+#head-mobile{
+  display: none;
+}
+#head-mobile *{
+  vertical-align:top;
+}
+.head-mobile-caption{
+  background-color: #595757;
+}
+.head-mobile-caption-btn{
+  margin-left: 0.2rem;
+  margin-top: 0.176rem;
+}
+.head-mobile-caption-img{
+  margin-top: 0.112rem;
+  margin-left: calc(50% - 0.536rem - 0.376rem);
+}
+.head-mobile-body ul{
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+.head-mobile-body-list{
+  height: 0.336rem;
+  line-height: 0.336rem;
+  padding-left: 0.2rem;
+  background-color: #595757;
+  border-bottom: 0.01rem solid white;
+}
+.head-mobile-body-input{
+  border:none;
+  width: calc(100% - 0.4rem);
+  height: 0.296rem;
+  border-radius: 0.16rem;
+}
+.head-mobile-body-search{
+  width: 0.208rem;
+  height: 0.208rem;
+  position: absolute;
+  z-index: 2;
+  top: 0.54rem;
+  right: 0.584rem;
+}
+.head-mobile-body ul li:last-child{
+  border: none;
+}
+.head-mobile-body ul li a{
+  font-size: 0.144rem;
+  font-family: '站酷小薇LOGO体';
+  color: white;
+}

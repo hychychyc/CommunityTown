@@ -1,0 +1,570 @@
+/* 引入自定义字体 */
+@font-face {
+  font-family: '站酷小薇LOGO体';
+  src: url("../font/站酷小薇LOGO体.otf");
+}    
+
+/* 思源黑体 */
+@font-face{
+  font-family: '思源黑体';
+  src: url("../font/NotoSansHans-Regular.otf");
+}
+
+/* 图片放大效果，对于不同高度的图片，需要对margin-top进行覆盖 */
+img{
+  width: 100%;
+  height: 100%;
+  /* transition: width 0.7s,height 0.7s,margin-left 0.7s,margin-top 0.7s; */
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+
+}
+.largen-img:hover{
+  transform:scale(1.05,1.05);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+  background-color: #ededed;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+}
+ul{
+  list-style: none;
+}
+#container{
+  position: absolute;
+}
+/* 背景图片 */
+#bg{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+}
+
+/* 模态框 */
+#modelContainer{
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  height: 2000.4px;
+  background: url('../img/登陆/社团小镇\ 登陆素材-01.png');
+  background-size: 100% 100%;
+  display: none;
+}
+#model{
+  z-index: 100;
+  color: #636363;
+  position: relative;
+  width: 520px;
+  height: 556.8px;
+  top: 153.6px;
+  margin: 0px auto;
+  background: url('../img/登陆/社团小镇\ 登陆素材-02.png');
+  background-size: 100% 100%; 
+  border-radius: 10px;
+}
+#model-close{
+  position: absolute;
+  width: 25.6px;
+  height:auto;
+  top: 19.2px;
+  left: 479.2px;
+}
+.model-header{
+  font-family: '站酷小薇LOGO体';
+  font-size: 45.6px;
+  color: #bd2720;
+  padding: 51.2px 0 0 0;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.model-header img{
+  width: 20.8px;
+}
+.model-login{
+
+}
+/* 设置placeholder */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #636363;
+  font-size: 19.2px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #636363;
+  font-size: 19.2px;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #636363;
+  font-size: 19.2px;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #636363;
+  font-size: 19.2px;
+}
+
+.model-login-input{
+  color: #636363;
+  font-size: 19.2px;
+  display: block;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #636363;
+  height: 40px;
+  outline: none;
+  margin: 0 0 33.6px 40px;
+  width: 401.6px;
+  padding: 0 16px;
+}
+.model-login-checkbox{
+  margin: 44.8px 0 0 43.2px;
+  height: 31.2px;
+}
+.model-login-checkbox input{
+
+  float: left;
+  margin-left: 4.8px;
+}
+.model-login-checkbox-label{
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  margin: -1.6px 0 0 4.64px; 
+}
+.model-login-btn{
+  width: 432px;
+  height: 66.4px;
+  border: none;
+  background: url('../img/登陆/社团小镇\ 登陆素材-03.png');
+  background-size: 100% 100%;
+  color:  white;
+  font-size: 35.2px;
+  font-family: '站酷小薇LOGO体';
+  float: left;
+  margin-left: 42.4px;
+  margin-top: -2.4px;
+}
+.model-login-footer{
+  width: 433.6px;
+  float: left;
+  margin: 9.6px 0 0 43.2px;
+  color: #636363;
+  font-size: 16px;
+}
+.model-footer{
+  float: left;
+  margin: 48px 0 0 153.6px;
+}
+.model-footer span{
+  float: left;
+  font-size: 21.6px;
+  font-family: '站酷小薇LOGO体';
+}
+.model-footer a{
+  float: left;
+  color:  #0e3477;
+  font-size: 21.6px;
+  font-family: '站酷小薇LOGO体';
+}
+
+
+
+/* 顶部导航栏 */
+#head{
+  /* display: none; */
+}
+#head *{
+  vertical-align:top;
+}
+.headItem{
+  display: inline-block;
+  vertical-align:top;
+}
+.headItemLeft{
+  float: left;
+  margin:  28px 0px 0px 32px;
+}
+.headItemCenter{
+  float: left;
+}
+.headItemCenter ul li a{
+  color: white;
+  letter-spacing: 2.8px;
+}
+.headItemRight{
+  float: right;
+}
+.navigation{
+  list-style: none;
+}
+
+.navigationItem{
+  float: left;
+}
+
+.navigationItemCenter{
+  margin: 36.8px 0px 0px 40px;
+}
+.navigationItemCenter a{
+  font-family: '站酷小薇LOGO体';
+  font-size: 14.4px;
+}
+
+.navigationItemRight{
+  margin: 0px 32px 0px 0px;
+}
+
+/* 折叠状态导航栏 */
+#head-mobile{
+  display: none;
+}
+#head-mobile *{
+  vertical-align:top;
+}
+.head-mobile-caption{
+  background-color: #595757;
+}
+.head-mobile-caption-btn{
+  margin-left: 20px;
+  margin-top: 17.6px;
+}
+.head-mobile-caption-img{
+  margin-top: 11.2px;
+  margin-left: calc(50% - 53.6px - 37.6px);
+}
+.head-mobile-body ul{
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+.head-mobile-body-list{
+  height: 33.6px;
+  line-height: 33.6px;
+  padding-left: 20px;
+  background-color: #595757;
+  border-bottom: 1px solid white;
+}
+.head-mobile-body-input{
+  border:none;
+  width: calc(100% - 40px);
+  height: 29.6px;
+  border-radius: 16px;
+}
+.head-mobile-body-search{
+  width: 20.8px;
+  height: 20.8px;
+  position: absolute;
+  z-index: 2;
+  top: 54px;
+  right: 58.4px;
+}
+.head-mobile-body ul li:last-child{
+  border: none;
+}
+.head-mobile-body ul li a{
+  font-size: 14.4px;
+  font-family: '站酷小薇LOGO体';
+  color: white;
+}
+
+/* 轮播图 */
+.banner{
+  position: relative;
+  width: 815.4px;
+  height: 343.2px;
+  margin: 98px calc(50% - 407.7px) 4px calc(50% - 407.7px);
+}
+.banner-img-box{
+  position: absolute;
+  width: 815.4px;
+  height: 343.2px;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 4;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.banner-img-box-hidden-left-1{
+  position: absolute;
+  width: 815.4px;
+  height: 298.4px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 22.4px;
+  margin-left: -43.2px;
+  z-index: 3;
+}
+.banner-img-box-hidden-right-1{
+  position: absolute;
+  width: 815.4px;
+  height: 298.4px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 22.4px;
+  margin-left: 43.2px;
+  z-index: 3;
+}
+.banner-img-box-hidden-left-2{
+  position: absolute;
+  width: 815.4px;
+  height: 298.4px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 22.4px;
+  margin-left: -43.2px;
+  z-index: 2;
+}
+.banner-img-box-hidden-right-2{
+  position: absolute;
+  width: 815.4px;
+  height: 298.4px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 22.4px;
+  margin-left: 43.2px;
+  z-index: 2;
+}
+
+.banner-bar-box{
+  width: 745.6px;
+  height: 7.2px;
+  margin: 0px auto;
+}
+.banner-bar{
+  float: left;
+  width: 144px;
+  height: 7.2px;
+  background: #515151;
+  margin-right: 6.4px;
+  cursor: pointer;
+}
+.banner-bar:last-child{
+  margin-right: 0px;
+}
+.banner-bar:hover{
+  background-color: #2589c2;
+}
+.banner-bar-activated{
+  background-color: #2589c2;
+}
+
+/* 分类栏 */
+.classify1{
+  width: 821.6px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin: 14.4px auto 0px auto;
+  padding: 0px 48px;
+}
+.classify1 .classify1-li{
+  float: left;
+  vertical-align: top;
+  font-size: 16px;
+  font-family: '站酷小薇LOGO体';
+  color: #727272;
+  margin-right: 24px;
+}
+.classify1 .classify1-li a{
+  font-size: 16px;
+  font-family: '站酷小薇LOGO体';
+  color: #727272;
+}
+.classify1 ul .classify1-activated,.classify1 ul .classify1-activated a{
+  color: #1e1e1e;
+}
+.classify1 li a:hover{
+  color: #1e1e1e;
+}
+
+.classify2{
+  width: 821.6px;
+  height: 22px;
+  margin: 8px auto 10px auto;
+}
+.classify2-item{
+  float: left;
+  color: #4f4f4f;
+  font-size: 11.2px;
+  font-family: '思源黑体';
+  margin-right: 25px;
+}
+.classify2-item input{
+  width: 10px;
+  height: 10px;
+  border-radius: 2.8px;
+  color: #c6c6c6;
+}
+.classify2-item span{
+  margin-left: -3px;
+}
+
+/* 活动展示区 */
+.main{
+  position: relative;
+  width: 874.4px;
+  margin: 0px auto;
+}
+.main-news-box{
+  position: relative;
+  width: 280.8px;
+  height: 320.8px;
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.main-news-img-box{
+  width: 280.8px;
+  height: 184.8px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  overflow: hidden;
+}
+.main-news-img-box span{
+  color: #ffffff;
+  font-size: 11.2px;
+  font-family: '思源黑体';
+  padding: 0px 10px 8px 10px;
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  bottom: 136px;
+  width: 260.8px;
+  background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1)); /* Safari 5.1 - 6.0 */ 
+  background: -o-linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1)); /* Opera 11.1 - 12.0 */ 
+  background: -moz-linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1)); /* Firefox 3.6 - 15 */ 
+  background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1)); /* 标准的语法 */ 
+}
+.main-news-text-box{
+  width: 280.8px;
+  height: 136px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: #ffffff;
+}
+.main-news-text-caption-box{
+  height: 55.2px;
+}
+.main-news-text-caption{
+  color: #1e1e1e;
+  font-size: 16px;
+  font-family: '思源黑体';
+  font-weight: bold;
+  padding: 9.6px 10px 9.6px 10px;
+  line-height: 18px;
+}
+.main-news-text-caption a{
+  color: #1e1e1e;
+}
+.main-news-text-caption a:hover{
+  color: #15729B;
+}
+.main-news-text-caption a:active{
+  color: #15729B;
+}
+.main-news-text-content{
+  color: #4f4f4f;
+  font-size: 12.8px;
+  font-family: '思源黑体';
+  margin: 0px 10px;
+  line-height: 15px;
+}
+.main-news-text-author{
+  height: 20px;
+  line-height: 20px;
+  padding: 7.2px 0px;
+  margin: 0px 10px;
+}
+.main-news-text-author img{
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.main-news-text-author span{
+  vertical-align: top;
+  color: #727272;
+  font-size: 11.2px;
+  font-family: '思源黑体';
+  margin-left: -18px;
+}
+
+.to-top{
+  position: fixed;
+  width:48.8px;
+  height: 48.8px;
+  left: calc(50% + 461.2px);
+  bottom: 38.4px;
+  border-radius: 50%;
+}
+
+/* 底部分页器 */
+#pagination{
+  clear:both;
+  width: 552.8px;
+  height: 108px;
+  margin: 0px auto;
+}
+#pagination ul{
+  height: 108px;
+  list-style: none;
+}
+#pagination ul li{
+  float: left;
+  font-family: '思源黑体';
+  font-size: 14.4px;
+  color: black;
+  margin-right: 20.8px;
+  margin-top: 17.6px;
+}
+#pagination ul li:last-child{
+  margin-right: 0px;
+}
+.pagination-btn{
+  font-family: '思源黑体';
+  font-size: 14.4px;
+  color: black;
+  background-color: rgba(256, 256, 256, 0.6);
+}
+.pagination-btn-activated{
+  font-family: '思源黑体';
+  font-size: 14.4px;
+  color: white;
+  background-color: rgba(114, 114, 114, 0.6);
+}
+#pagination ul li button:active{
+  color: white;
+  background-color: rgba(114, 114, 114, 0.6);
+}
+.pagination-circle{
+  width: 34.4px;
+  height: 34.4px;
+  line-height: 34.4px;
+  text-align: center;
+  border-radius: 50%;
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+.pagination-ellipse{
+  width: 56px;
+  height: 34.4px;
+  line-height: 34.4px;
+  text-align: center;
+  border-radius: 16px;
+  border:none;
+  outline: none;
+  cursor: pointer;
+}

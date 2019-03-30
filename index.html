@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>社团小镇</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/index-rem.css" />
+</head>
+<body>
+  <!-- 背景图片 -->
+  <img id="bg1">
+  <img id="bg2">
+  <img id="sky1">
+  <img id="sky2">
+   <!-- 太阳或月亮 -->
+   <img id="sunOrMoon">
+   <!-- 人物 -->
+   <img id="person1">
+   <img id="person2">
+   <img id="person3">
+   <!-- 模态框 -->
+   <div id="modelContainer">
+     <div id="model">
+         <img id="model-close" src="img/登陆/社团小镇 登陆素材-05.png">
+         <div class="model-header">
+           <img src="img/登陆/社团小镇 登陆素材-04-1.png">
+           <span>社团小镇</span>
+           <img src="img/登陆/社团小镇 登陆素材-04-2.png">
+         </div>
+         <div class="model-login">
+           <form>
+             <input class="model-login-input" type="text" placeholder="手机号或邮箱">
+             <input class="model-login-input" type="password" placeholder="密码">
+             <div  class="model-login-checkbox">
+                 <input type="checkbox" id="auto-login">
+                 <label class="model-login-checkbox-label" for="auto-login">下次自动登陆</label>
+             </div>
+             <input class="model-login-btn" type="submit" value="登陆">
+           </form>
+           <div class="model-login-footer">
+             <a>手机验证码登陆</a>
+             <a style="float:right;">忘记密码</a>
+           </div>
+         </div>
+         <div class="model-footer">
+           <span>还没有账号？</span>
+           <a>立即注册</a>
+         </div>
+     </div>
+   </div>
+  <div id="container">
+    <!-- 顶部导航栏 -->
+    <div id="head">
+      <div class="headItem headItemLeft">
+          <img src="img/社团小镇 首页-杭电.png" style="width: 107.2px; height:27.2px;">
+      </div>
+      <div class="headItem  headItemCenter">
+        <ul class="navigation navigationCenter">
+          <li class="navigationItem navigationItemCenter"><a href="./index.html">首页</a></li>
+          <li class="navigationItem navigationItemCenter"><a href="">我的社团</a></li>
+          <li class="navigationItem navigationItemCenter"><a href="./news.html">社团动态</a></li>
+          <li class="navigationItem navigationItemCenter"><a href="./all.html">所有社团</a></li>
+        </ul>
+      </div>
+      <div class="headItem headItemRight">
+        <ul class="navigation">
+            <li class="navigationItem navigationItemRight" style="margin-top: 32px;">
+              <a href="#">
+                <img src="img/社团小镇 首页-搜索.png" style="width: 20.8px; height:22.4px;">
+              </a>
+            </li>
+            <li class="navigationItem navigationItemRight" style="margin-top: 32px;">
+              <a href="#">
+                <img src="img/社团小镇 首页-通知.png" style="width: 22.4px; height:23.2px;">
+              </a>
+            </li>
+            <li id="mine" class="navigationItem navigationItemRight" style="margin-top: 29.6px;">
+              <a>
+                <img src="img/社团小镇 首页-我的.png" style="width: 29.6px; height:28.8px;">
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end: 顶部导航栏 -->
+    <!-- 折叠状态顶部导航栏 -->
+    <div id="head-mobile">
+      <div class="head-mobile-caption" style="height:49.6px;">
+          <img id="head-mobile-caption-btn" class="head-mobile-caption-btn" src="img/压缩导航-02.png" style="width: 22.4px;height:14.4px">
+          <img class="head-mobile-caption-img" src="img/社团小镇 首页-杭电.png" style="width: 107.2px; height:27.2px;">
+      </div>
+      <div class="head-mobile-body">
+        <ul id="head-mobile-body">
+          <li class="head-mobile-body-list" style="height:43.2px">
+            <input class="head-mobile-body-input" type="text">
+            <img class="head-mobile-body-search" src="img/搜索-03.png">
+          </li>
+          <li class="head-mobile-body-list"><a href="index.html">首页</a></li>
+          <li class="head-mobile-body-list"><a href="">我的社团</a></li>
+          <li class="head-mobile-body-list"><a href="news.html">社团动态</a></li>
+          <li class="head-mobile-body-list"><a href="all.html">所有社团</a></li>
+          <li id="mine-mobile" class="head-mobile-body-list"><a>我的</a></li>
+          <li class="head-mobile-body-list"><a href="">消息</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end: 折叠状态顶部导航栏 -->
+    <!-- 标题 -->
+   <img id="caption" src="img/社团小镇 标题-08.png">
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>

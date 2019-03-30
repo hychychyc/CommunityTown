@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>社团小镇</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/news.css" />
+</head>
+<body>
+  <!-- 背景图片 -->
+  <img id="bg" src="img/news/社团小镇 所有活动-背景.jpg">
+   <!-- 模态框 -->
+   <div id="modelContainer">
+     <div id="model">
+         <img id="model-close" src="img/登陆/社团小镇 登陆素材-05.png">
+         <div class="model-header">
+           <img src="img/登陆/社团小镇 登陆素材-04-1.png">
+           <span>社团小镇</span>
+           <img src="img/登陆/社团小镇 登陆素材-04-2.png">
+         </div>
+         <div class="model-login">
+           <form>
+             <input class="model-login-input" type="text" placeholder="手机号或邮箱">
+             <input class="model-login-input" type="password" placeholder="密码">
+             <div  class="model-login-checkbox">
+                 <input type="checkbox" id="auto-login">
+                 <label class="model-login-checkbox-label" for="auto-login">下次自动登陆</label>
+             </div>
+             <input class="model-login-btn" type="submit" value="登陆">
+           </form>
+           <div class="model-login-footer">
+             <a>手机验证码登陆</a>
+             <a style="float:right;">忘记密码</a>
+           </div>
+         </div>
+         <div class="model-footer">
+           <span>还没有账号？</span>
+           <a>立即注册</a>
+         </div>
+     </div>
+   </div>
+  <div id="container">
+    <!-- 顶部导航栏 -->
+    <div id="head">
+      <div class="headItem headItemLeft">
+          <img src="img/社团小镇 首页-杭电.png" style="width: 107.2px; height:27.2px;">
+      </div>
+      <div class="headItem  headItemCenter">
+        <ul class="navigation navigationCenter">
+          <li class="navigationItem navigationItemCenter"><a href="./index.html">首页</a></li>
+          <li class="navigationItem navigationItemCenter"><a href="">我的社团</a></li>
+          <li class="navigationItem navigationItemCenter"><a href="./news.html">社团动态</a></li>
+          <li class="navigationItem navigationItemCenter"><a href="./all.html">所有社团</a></li>
+        </ul>
+      </div>
+      <div class="headItem headItemRight">
+        <ul class="navigation">
+            <li class="navigationItem navigationItemRight" style="margin-top: 32px;">
+              <a href="#">
+                <img src="img/社团小镇 首页-搜索.png" style="width: 20.8px; height:22.4px;">
+              </a>
+            </li>
+            <li class="navigationItem navigationItemRight" style="margin-top: 32px;">
+              <a href="#">
+                <img src="img/社团小镇 首页-通知.png" style="width: 22.4px; height:23.2px;">
+              </a>
+            </li>
+            <li id="mine" class="navigationItem navigationItemRight" style="margin-top: 29.6px;">
+              <a>
+                <img src="img/社团小镇 首页-我的.png" style="width: 29.6px; height:28.8px;">
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end: 顶部导航栏 -->
+
+    <!-- 折叠状态顶部导航栏 -->
+    <div id="head-mobile">
+      <div class="head-mobile-caption" style="height:49.6px;">
+          <img id="head-mobile-caption-btn" class="head-mobile-caption-btn" src="img/压缩导航-02.png" style="width: 22.4px;height:14.4px">
+          <img class="head-mobile-caption-img" src="img/社团小镇 首页-杭电.png" style="width: 107.2px; height:27.2px;">
+      </div>
+      <div class="head-mobile-body">
+        <ul id="head-mobile-body">
+          <li class="head-mobile-body-list" style="height:43.2px">
+            <input class="head-mobile-body-input" type="text">
+            <img class="head-mobile-body-search" src="img/搜索-03.png">
+          </li>
+          <li class="head-mobile-body-list"><a href="index.html">首页</a></li>
+          <li class="head-mobile-body-list"><a href="">我的社团</a></li>
+          <li class="head-mobile-body-list"><a href="news.html">社团动态</a></li>
+          <li class="head-mobile-body-list"><a href="all.html">所有社团</a></li>
+          <li id="mine-mobile" class="head-mobile-body-list"><a>我的</a></li>
+          <li class="head-mobile-body-list"><a href="">消息</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end: 折叠状态顶部导航栏 -->
+
+    <!-- 轮播图 -->
+    <div class="banner">
+      <div class="banner-img-box"><img class="largen-img" src="./img/news/活动图片/社团小镇-所有活动-banner图-1.jpg"></div>
+      <div class="banner-img-box banner-img-box-hidden-right-1"><img class="largen-img" src="./img/news/活动图片/社团小镇-所有活动-banner图-2.jpg"></div>
+      <div class="banner-img-box banner-img-box-hidden-right-2"><img class="largen-img" src="./img/news/活动图片/社团小镇-所有活动-banner图-3.jpg"></div>
+      <div class="banner-img-box banner-img-box-hidden-left-2"><img class="largen-img" src="./img/news/活动图片/社团小镇-所有活动-banner图-1.jpg"></div>
+      <div class="banner-img-box banner-img-box-hidden-left-1"><img class="largen-img" src="./img/news/活动图片/社团小镇-所有活动-banner图-2.jpg"></div>
+    </div>
+    <div class="banner-bar-box">
+      <div class="banner-bar banner-bar-activated"></div>
+      <div class="banner-bar"></div>
+      <div class="banner-bar"></div>
+      <div class="banner-bar"></div>
+      <div class="banner-bar"></div>
+    </div>
+    <!-- end: 轮播图 -->
+
+    <!-- 分类栏 -->
+    <div class="classify1">
+      <ul>
+        <li class="classify1-li classify1-activated" style="font-weight:bold"><a href="">全部</a></li>
+        <li class="classify1-li"><a href="">推荐</a></li>
+        <li class="classify1-li"><a href="">关注</a></li>
+        <li class="classify1-li"><a href="">动态</a></li>
+        <li class="classify1-li"><a href="">校招</a></li>
+        <li class="classify1-li"><a href="">讲座</a></li>
+        <li class="classify1-li"><a href="">招新</a></li>
+      </ul>
+    </div>
+    <div class="classify2">
+      <div class="classify2-item">
+        <input type="checkbox">
+        <span>理论研究</span>
+      </div>
+      <div class="classify2-item">
+        <input type="checkbox">
+        <span>志愿服务</span>
+      </div>
+      <div class="classify2-item">
+        <input type="checkbox">
+        <span>体育竞技</span>
+      </div>
+      <div class="classify2-item">
+        <input type="checkbox">
+        <span>文化艺术</span>
+      </div>
+    </div>
+    <!-- end: 分类栏 -->
+
+    <!-- 活动展示区 -->
+    <div class="main">
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-1.jpg"></a>
+            <span>时间：2019年3月7日（星期四）  |  地点：学活对面</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">来拿助手告白气球，你就是整条gai最靓的崽</a></p></div>
+            <p class="main-news-text-content">阴沉的天久违的放晴了，而节日也就要到来，助手已经准备好了整箱礼物，千万别忘了来领走专属于你的告白气球哦~</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-1.jpg">
+              <span>杭电助手</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-2.jpg"></a>
+            <span>时间：2019年3月7日（周四）-3月17日（周日）  |  地点：线上活动</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">在吗？老板娘想请你吃火锅|土家老火锅×杭电社联</a></p></div>
+            <p class="main-news-text-content">还记得那家下沙最实在的火锅店吗？没错，听说小伙伴们都开学了，老板娘想招呼大家去土家老火锅，吃上一顿便宜又满足的开学聚餐。</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-2.jpg">
+              <span>杭电社联</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box" style="margin-right: 0px;">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-3.jpg"></a>
+            <span>时间：2019年3月-5月  |  地点：——</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">通知！第十一届校园心理情景剧大赛强势来袭！！</a></p></div>
+            <p class="main-news-text-content">为推进大学生心理健康教育工作、提高大学生的心理素质和心理健康水平，杭州电子科技大学心理健康教育中心决定2019年3月—5月...</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-3.jpg">
+              <span>杭电心理</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-4.jpg"></a>
+            <span>时间：2019年3月7日（周四）  |  地点：学活对面</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">公益讲座 | 华为带领你在“枪林弹雨中成长”</a></p></div>
+            <p class="main-news-text-content">身处在这个伟大的时代，你是否想过用自己的青春去创造奇迹，你是否想去经历鲜花的战场历经八年的时光。</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-1.jpg">
+              <span>杭电助手</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-5.jpg"></a>
+            <span>时间：2019年3月7日（周四）-3月17日（周日）  |  地点：线上活动</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">红色家园网络工作室|技术最好der全员红人</a></p></div>
+            <p class="main-news-text-content">红色家园成立于2000年，隶属于校党委宣传部，是一个致力于互联网开发及服务，旨在基于互联网来服务我校师生和繁荣校园文化的学</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-4.jpg">
+              <span>在杭电</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box" style="margin-right: 0px;">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-6.jpg"></a>
+            <span>时间：2019年3月-5月  |   地点：——  </span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">Hey Dear U | 我想，听见你</a></p></div>
+            <p class="main-news-text-content">杭州电子科技大学校园十佳歌手比赛不仅是杭州电子科技大学的传统节目，也是团委，校会的精品活动之一，深受同学们的喜爱与期待...</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-5.jpg">
+              <span>杭州电子科技大学学生会</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-7.jpg"></a>
+            <span>时间：2018年11月18日（周日）  |  地点：杭州电子...</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">2018浙江秋季未来力峰会 | 和创行的故事从它开始</a></p></div>
+            <p class="main-news-text-content">这场包含大量干货和精彩的创新挑战赛的秋季未来力峰会要来临啦！我们期待你在这场峰会中收获满满的干货和对创行未来的期待。</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-6.jpg">
+              <span>杭电Enactus</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-8.jpg"></a>
+            <span>时间：2018年11月21日（周三）  |  地点：学活舞池</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">第二届雪域明珠藏晚会节要来临了，你准备好了吗？</a></p></div>
+            <p class="main-news-text-content">光阴荏苒，一年消失过去，平淡的十一月里，雪域明珠第二届藏晚会如约而至。在这里有优美的舞姿，有天籁般的歌声，更有异域他乡...</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-7.jpg">
+              <span>杭电雪域明珠</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box" style="margin-right: 0px;">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-9.jpg"></a>
+            <span>时间：2018年6月3日（周日）  |   地点：学活舞池</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">舞出我人生——时光不老，我们不散</a></p></div>
+            <p class="main-news-text-content">本次晚会以“童年”为主题，带领大家一路穿越时空隧道，回到童年最美好纯真的时光，并能欣赏到酣畅淋漓的舞蹈表演。不知道小哥...</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-8.jpg">
+              <span>杭电SetFree街舞社</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-4.jpg"></a>
+            <span>时间：2019年3月7日（周四）  |  地点：学活对面</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">公益讲座 | 华为带领你在“枪林弹雨中成长”</a></p></div>
+            <p class="main-news-text-content">身处在这个伟大的时代，你是否想过用自己的青春去创造奇迹，你是否想去经历鲜花的战场历经八年的时光。</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-1.jpg">
+              <span>杭电助手</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-5.jpg"></a>
+            <span>时间：2019年3月7日（周四）-3月17日（周日）  |  地点：线上活动</span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">红色家园网络工作室|技术最好der全员红人</a></p></div>
+            <p class="main-news-text-content">红色家园成立于2000年，隶属于校党委宣传部，是一个致力于互联网开发及服务，旨在基于互联网来服务我校师生和繁荣校园文化的学</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-4.jpg">
+              <span>在杭电</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-news-box" style="margin-right: 0px;">
+          <div class="main-news-img-box">
+            <a href=""><img class="largen-img" src="img/news/活动图片/社团小镇-所有活动-活动图-10.jpg"></a>
+            <span>时间：2019年3月-5月  |   地点：—— </span>
+          </div>
+          <div class="main-news-text-box">
+            <div class="main-news-text-caption-box"><p class="main-news-text-caption"><a href="">2022杭州亚运会，杭电击剑比赛欢迎你</a></p></div>
+            <p class="main-news-text-content">9月2日晚，第十八届亚运会闭幕式在印尼雅加达上演。杭州作为下一届亚运会的举办城市也在闭幕式中亮相，正式迎来了“杭州时间”...</p>
+            <div class="main-news-text-author">
+              <img src="img/news/活动图片/社团小镇-所有活动-社团头像-9.jpg">
+              <span>电小二</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 回到顶部 -->
+        <img class="to-top" src="./img/news/社团小镇 所有活动-回到顶部.png">
+        <!-- 底部分页 -->
+        <div id="pagination">
+            <ul>
+              <li><button class="pagination-circle pagination-btn-activated">1</button></li>
+              <li><button class="pagination-circle pagination-btn">2</button></li>
+              <li><button class="pagination-circle pagination-btn">3</button></li>
+              <li><button class="pagination-circle pagination-btn">4</button></li>
+              <li><button class="pagination-circle pagination-btn">5</button></li>
+              <li><button class="pagination-circle pagination-btn">6</button></li>
+              <li><button class="pagination-circle pagination-btn">7</button></li>
+              <li><button class="pagination-circle pagination-btn">8</button></li>
+              <li><button class="pagination-ellipse pagination-btn">...</button></li>
+              <li><button class="pagination-circle pagination-btn">12</button></li>
+            </ul>
+          </div>
+        <!-- end:底部分页 -->
+    </div>
+    <!-- end: 活动展示区 -->
+
+
+     
+
+
+    
+  </div>
+  <script src="./js/news.js"></script>
+</body>
+</html>
